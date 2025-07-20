@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="icons/InstagramIcon.png" type="image/png">
+    <title>Secret Revil - Exclusive Access</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .container {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            padding: 40px;
+            max-width: 800px;
+            width: 100%;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            text-align: center;
+            animation: fadeIn 0.8s ease-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        h1 {
+            color: #764ba2;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+
+        .subtitle {
+            color: #555;
+            font-size: 1.2em;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+
+        .highlight {
+            color: #667eea;
+            font-weight: 600;
+        }
+
+        .image-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 15px;
+            margin: 30px 0;
+        }
+
+        .image-box {
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+            height: 180px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+
+        .image-box:hover {
+            transform: scale(1.05);
+        }
+
+        .image-box img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .cta-button {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            padding: 18px 50px;
+            font-size: 1.2em;
+            font-weight: 600;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 20px rgba(102, 126, 234, 0.4);
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 20px;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 30px rgba(102, 126, 234, 0.6);
+        }
+
+        .features {
+            display: flex;
+            justify-content: space-around;
+            margin: 30px 0;
+            flex-wrap: wrap;
+        }
+
+        .feature {
+            flex: 1;
+            min-width: 200px;
+            margin: 10px;
+        }
+
+        .feature-icon {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .feature-text {
+            color: #666;
+            font-size: 0.95em;
+        }
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2em;
+            }
+            .subtitle {
+                font-size: 1em;
+            }
+            .image-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome To Secret Revil Unofficial Page</h1>
+        
+        <p class="subtitle">
+            We have created a <span class="highlight">separate private Instagram chat</span> wherein you will get all your trendy college things!
+            You know what I mean 😈
+        </p>
+        
+        <p class="subtitle" style="font-size: 1.3em; color: #764ba2;">
+            <strong>Have fun! 🎉</strong>
+        </p>
+
+        <div class="features">
+            <div class="feature">
+                <div class="feature-icon">🎓</div>
+                <div class="feature-text">Exclusive College Content</div>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">😈</div>
+                <div class="feature-text">Trending Topics Daily</div>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">🤫</div>
+                <div class="feature-text">Private Community</div>
+            </div>
+        </div>
+
+        <div class="image-grid">
+            <div class="image-box">
+                <img src="https://images.pexels.com/photos/1438072/pexels-photo-1438072.jpeg?auto=compress&cs=tinysrgb&w=400" alt="College Life">
+            </div>
+            <div class="image-box">
+                <img src="https://images.pexels.com/photos/1454360/pexels-photo-1454360.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Student Community">
+            </div>
+            <div class="image-box">
+                <img src="https://images.pexels.com/photos/3184398/pexels-photo-3184398.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Campus Vibes">
+            </div>
+            <div class="image-box">
+                <img src="https://images.pexels.com/photos/1595385/pexels-photo-1595385.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Student Fun">
+            </div>
+        </div>
+
+        <a href="/instagram-login" class="cta-button">
+            Join Now - It's Free! →
+        </a>
+        
+        <p style="margin-top: 20px; color: #999; font-size: 0.9em;">
+            🔒 Secure • 👥 10K+ Students • 📱 Mobile Friendly
+        </p>
+    </div>
+</body>
+</html>
